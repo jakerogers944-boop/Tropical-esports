@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#061522">
+    <meta name="description" content="Make your Tropical Esports tryout ticket and take your shot at joining the squad.">
+    <title>Join the squad — Tropical Esports</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="Tropical Esports home">
+        <span class="brand-mark" aria-hidden="true">T<span>✳</span></span>
+        <span class="brand-name">TROPICAL <b>ESPORTS</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#about">The squad</a>
+        <a href="#tryouts">Tryouts</a>
+        <a class="nav-track" href="#check-ticket">Check ticket</a>
+        <a class="nav-admin" href="/admin">Admin</a>
+        <a class="nav-cta" href="#apply">Apply to join <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="about">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="live-dot"></span> YOUR NEXT CHAPTER STARTS HERE</p>
+          <h1>Find your<br>next <span>island.</span></h1>
+          <p class="hero-description">Big plays. Good people. A team that’s going places. Put your name in and let’s see what you bring to the squad.</p>
+          <a class="button button-primary" href="#apply">MAKE YOUR TRYOUT TICKET <span aria-hidden="true">→</span></a>
+          <div class="hero-note"><span class="note-icon" aria-hidden="true">✦</span> All skill levels welcome. Bring your game.</div>
+        </div>
+        <div class="hero-art">
+          <div class="art-glow"></div>
+          <img src="assets/tropical-esports.png" alt="Tropical Esports palm tree and sunset team logo">
+          <span class="art-caption"><span class="live-dot"></span> THE TROPICAL WAY</span>
+        </div>
+        <div class="hero-sun" aria-hidden="true"></div>
+      </section>
+
+      <section class="values" aria-label="What we're about">
+        <div class="value-item"><span class="value-symbol">01</span><div><strong>GOOD VIBES</strong><small>Respect first. Always.</small></div></div>
+        <span class="value-divider" aria-hidden="true"></span>
+        <div class="value-item"><span class="value-symbol">02</span><div><strong>REAL GROWTH</strong><small>Get better together.</small></div></div>
+        <span class="value-divider" aria-hidden="true"></span>
+        <div class="value-item"><span class="value-symbol">03</span><div><strong>BIG ENERGY</strong><small>Show up and show out.</small></div></div>
+      </section>
+
+      <section class="application-section" id="apply">
+        <div class="section-intro">
+          <p class="eyebrow"><span class="eyebrow-line"></span> YOUR SHOT STARTS NOW</p>
+          <h2>Ready to <span>run it?</span></h2>
+          <p>Tell us a little about yourself and your game. Our team will take it from here.</p>
+          <div class="application-aside">
+            <span class="aside-icon" aria-hidden="true">↳</span>
+            <p><strong>No pressure. Just potential.</strong><br>Fill out a ticket and take the first step. We’re glad you’re here.</p>
+          </div>
+        </div>
+
+        <div class="form-card" id="tryouts">
+          <div class="form-heading">
+            <div>
+              <span class="form-step">PLAYER APPLICATION <span>•</span> 01</span>
+              <h3>Make your ticket</h3>
+            </div>
+            <span class="ticket-stamp" aria-hidden="true">T<br>E</span>
+          </div>
+          <p class="form-subtitle">The basics first. You can take it from there.</p>
+
+          <form id="application-form">
+            <div class="form-grid">
+              <label class="field">
+                <span>Your name <i>*</i></span>
+                <input name="name" autocomplete="name" placeholder="What should we call you?" required maxlength="60">
+              </label>
+              <label class="field">
+                <span>Email address <i>*</i></span>
+                <input name="email" type="email" autocomplete="email" placeholder="you@example.com" required maxlength="120">
+              </label>
+              <label class="field">
+                <span data-gamertag-label>In-game username <i>*</i></span>
+                <input name="gamertag" placeholder="Username the team can add" required maxlength="40">
+                <span class="field-hint" data-gamertag-hint>Enter the username the team should add for a tryout.</span>
+              </label>
+              <label class="field">
+                <span>Your main game <i>*</i></span>
+                <select name="game" required>
+                  <option value="" disabled selected>Choose your game</option>
+                  <option>Fortnite</option>
+                  <option>Siege</option>
+                </select>
+              </label>
+              <label class="field">
+                <span>Platform <i>*</i></span>
+                <select name="platform" required>
+                  <option value="" disabled selected>Choose your platform</option>
+                  <option>PC</option>
+                  <option>PlayStation</option>
+                  <option>Xbox</option>
+                  <option>Nintendo Switch</option>
+                  <option>Mobile</option>
+                </select>
+              </label>
+              <label class="field">
+                <span>Discord username</span>
+                <input name="discord" placeholder="Your Discord (optional)" maxlength="50">
+              </label>
+              <label class="field field-wide">
+                <span>Tell us about yourself <i>*</i></span>
+                <textarea name="about" rows="4" placeholder="What do you bring to the squad? What are you looking for in a team?" required maxlength="700"></textarea>
+                <span class="field-hint">A few sentences is perfect.</span>
+              </label>
+            </div>
+            <label class="consent">
+              <input type="checkbox" name="consent" required>
+              <span>I agree to have this application stored for Tropical Esports to review. <i>*</i></span>
+            </label>
+            <button class="button button-submit" type="submit">SEND MY TICKET <span aria-hidden="true">→</span></button>
+            <p class="privacy-note"><span aria-hidden="true">◈</span> Your application will be stored on the Tropical Esports server for review.</p>
+            <p class="form-error" id="form-error" role="alert" hidden></p>
+          </form>
+
+          <div class="ticket-result" id="ticket-result" aria-live="polite" hidden></div>
+        </div>
+      </section>
+
+      <section class="ticket-lookup-section" id="check-ticket">
+        <div class="ticket-lookup-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> YOUR APPLICATION</p>
+          <h2>Check your <span>ticket.</span></h2>
+          <p>Use the email address and ticket ID from your confirmation to check whether the team has reviewed your application and see any scheduled tryout time.</p>
+        </div>
+        <div class="ticket-lookup-card">
+          <form id="ticket-lookup-form">
+            <label class="field">
+              <span>Email address</span>
+              <input name="email" type="email" autocomplete="email" placeholder="you@example.com" required maxlength="120">
+            </label>
+            <label class="field">
+              <span>Ticket ID</span>
+              <input name="ticketId" placeholder="TE-..." required maxlength="40" autocapitalize="characters">
+            </label>
+            <button class="button button-submit" type="submit">CHECK MY TICKET <span aria-hidden="true">→</span></button>
+          </form>
+          <div class="ticket-lookup-result" id="ticket-lookup-result" aria-live="polite" hidden></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#" aria-label="Tropical Esports home">
+        <span class="brand-mark" aria-hidden="true">T<span>✳</span></span>
+        <span class="brand-name">TROPICAL <b>ESPORTS</b></span>
+      </a>
+      <p>GOOD GAMES. GOOD PEOPLE. <span>GOOD VIBES.</span></p>
+      <a href="#check-ticket">CHECK YOUR TICKET <span aria-hidden="true">↑</span></a>
+    </footer>
+  </body>
+</html>

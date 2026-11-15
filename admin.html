@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#061522">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Admin — Tropical Esports</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/admin.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Tropical Esports home">
+        <span class="brand-mark" aria-hidden="true">T<span>✳</span></span>
+        <span class="brand-name">TROPICAL <b>ESPORTS</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="/">Back to site</a>
+      </nav>
+    </header>
+
+    <main class="admin-main">
+      <section class="admin-heading">
+        <p class="eyebrow"><span class="eyebrow-line"></span> PRIVATE AREA</p>
+        <h1>Ticket <span>desk.</span></h1>
+        <p>Applications are visible only to an authenticated admin.</p>
+      </section>
+
+      <section class="admin-card" id="login-panel" hidden>
+        <p class="form-step">ADMIN SIGN IN</p>
+        <h2>Restricted access</h2>
+        <p id="access-message" class="admin-message" role="status">You do not have access. Sign in with an authorized account.</p>
+        <form id="login-form">
+          <label class="field">
+            <span>Username</span>
+            <input name="username" autocomplete="username" required maxlength="100">
+          </label>
+          <label class="field">
+            <span>Password</span>
+            <input name="password" type="password" autocomplete="current-password" required maxlength="200">
+          </label>
+          <button class="button button-submit" type="submit">SIGN IN <span aria-hidden="true">→</span></button>
+        </form>
+      </section>
+
+      <section class="admin-card" id="tickets-panel" hidden>
+        <div class="admin-toolbar">
+          <div>
+            <p class="form-step">INCOMING APPLICATIONS</p>
+            <h2>Tickets <span id="ticket-count">0</span></h2>
+          </div>
+          <button class="button button-secondary" id="logout-button" type="button">SIGN OUT</button>
+        </div>
+        <p class="admin-message" id="ticket-message" role="status" hidden></p>
+        <div class="ticket-list" id="ticket-list"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="/" aria-label="Tropical Esports home">
+        <span class="brand-mark" aria-hidden="true">T<span>✳</span></span>
+        <span class="brand-name">TROPICAL <b>ESPORTS</b></span>
+      </a>
+      <p>GOOD GAMES. GOOD PEOPLE. <span>GOOD VIBES.</span></p>
+      <a href="/">BACK TO SITE <span aria-hidden="true">↑</span></a>
+    </footer>
+  </body>
+</html>
